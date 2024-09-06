@@ -10,8 +10,9 @@ import Createproducts from './pages/create';
 function App() {
   return (
     <div className="App">
-      <Header/>
+     
    <BrowserRouter>
+   <Header/>
    <Routes>
     <Route path='/' element={   
      <Home/> }/>
