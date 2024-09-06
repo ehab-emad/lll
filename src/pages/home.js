@@ -14,8 +14,8 @@ export default function Home() {
    <Header/>
    <div className='home'>
 <container>
-   <h1 className='mm'> 
-   بفضل الله الموديلات المتاحه ف المصنع  </h1>
+   <h1 className='mm'>  بفضل الله الموديلات المتاحه ف المصنع 
+   </h1>
 {
  data.map((i)=>{
    return(<>
