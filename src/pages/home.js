@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import ww from '../WhatsApp-Image-2024-09-03-at-2.03.37-PM.webp'
 import { useDispatch, useSelector } from 'react-redux'
 import { getData } from '../store/createslic'
+import Header from '../components/header'
 export default function Home() {
   const data=useSelector((state)=>state.productss.product)
   const dispatch=useDispatch()
@@ -9,19 +10,21 @@ export default function Home() {
     dispatch(getData())
   })
   return (
-    <div className='home'>
+   <> 
+   <Header/>
+   <div className='home'>
 <container>
-    <h1 className='mm'> 
-        الحمد لله كثيرا المودلات المتاحه الان فى المصنع   </h1>
+   <h1 className='mm'> 
+       الحمد لله كثيرا المودلات المتاحه الان فى المصنع   </h1>
 {
-  data.map((i)=>{
-    return(<>
-    <div className='ss'>
-      {/* {i} */}
+ data.map((i)=>{
+   return(<>
+   <div className='ss'>
+     {/* {i} */}
 <img className='img-style' src={"https://ss-sggy.onrender.com/" + i.images } alt='...' loading='lazy'/>
 </div>
-    </>)
-  })
+   </>)
+ })
 }
 
 
@@ -30,6 +33,6 @@ export default function Home() {
 
 
 
-    </div>
+   </div></>
   )
 }

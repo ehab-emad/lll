@@ -12,7 +12,7 @@ function App() {
     <div className="App">
      
    <HashRouter>
-   <Header/>
+   
    <Routes>
     <Route path='/' element={   
      <Home/> }/>
