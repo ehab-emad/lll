@@ -3,7 +3,7 @@ import './App.css';
 import Home from './pages/home';
 import Header from './components/header';
 import Footer from './components/footer';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import Admin from './pages/admin';
 import Createproducts from './pages/create';
 
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
      
-   <BrowserRouter>
+   <HashRouter>
    <Header/>
    <Routes>
     <Route path='/' element={   
@@ -22,7 +22,7 @@ function App() {
      <Createproducts/> }/>
 
     
-    </Routes></BrowserRouter>
+    </Routes></HashRouter>
      <Footer/>
     </div>
   );
