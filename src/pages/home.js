@@ -21,7 +21,7 @@ export default function Home() {
    return(<>
    <div className='ss'>
      {/* {i} */}
-<img className='img-style' src={"https://ss-sggy.onrender.com/" + i.url } alt='...' loading='lazy'/>
+<img className='img-style' src={"https://server1-nz9w.onrender.com/" + i.url } alt='...' loading='lazy'/>
 </div>
    </>)
  })

@@ -8,7 +8,7 @@ import { getData } from "../store/createslic";
 export default function Admin(){
     const nav=useNavigate()
     function deleteproduct(id){
-        fetch('https://ss-sggy.onrender.com/products/'+ id,{
+        fetch('https://server1-nz9w.onrender.com/'+ id,{
             method:"DELETE"
         }).then(Response=>{
             if(!Response.ok){
@@ -68,7 +68,7 @@ return(
     <tr>
 <td className="ko">{item.id}</td>
 
-<td><img src={"https://ss-sggy.onrender.com/" + item.url } width={"40"} alt="..."></img></td>
+<td><img src={"https://server1-nz9w.onrender.com/" + item.url } width={"40"} alt="..."></img></td>
 {/* {console.log("http://localhost:30001/" + item.images)} */}
 
 <td style={{width:"9px",whiteSpace:"nowrap",} } className="d">
