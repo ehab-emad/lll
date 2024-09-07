@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 // import db from '../../public/json/db.json'
 export const getData = createAsyncThunk('ecommerce/getData', async (_, thunkAPI) => {
 
-    const res = await fetch('https://server1-nz9w.onrender.com');
+    const res = await fetch('https://ss-sggy.onrender.com/products');
     const data = await res.json()
     console.log(data)
     return (data)
