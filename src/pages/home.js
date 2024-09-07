@@ -20,7 +20,7 @@ export default function Home() {
  data.map((i)=>{
    return(<>
    <div className='ss'>
-     {/* {i} */}
+     {console.log(i)}
 <img className='img-style' src={i.url } alt='...' loading='lazy' />
 </div>
    </>)
