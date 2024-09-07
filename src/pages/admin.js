@@ -68,7 +68,7 @@ return(
     <tr>
 <td className="ko">{item.id}</td>
 
-<td><img src={"https://server1-nz9w.onrender.com/" + item.url } width={"40"} alt="..."></img></td>
+<td><img src={ item.url } width={"40"} alt="..."></img></td>
 {/* {console.log("http://localhost:30001/" + item.images)} */}
 
 <td style={{width:"9px",whiteSpace:"nowrap",} } className="d">
