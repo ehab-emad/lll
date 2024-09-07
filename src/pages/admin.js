@@ -8,7 +8,7 @@ import { getData } from "../store/createslic";
 export default function Admin(){
     const nav=useNavigate()
     function deleteproduct(id){
-        fetch('https://server1-nz9w.onrender.com/'+ id,{
+        fetch('https://server1-nz9w.onrender.com/images'+ id,{
             method:"DELETE"
         }).then(Response=>{
             if(!Response.ok){
