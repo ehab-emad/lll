@@ -63,12 +63,13 @@ actions
     <tbody>
     {
 data.length>0 ? 
-(data.map((item)=>{
+(data.map((item,index)=>{
     const ii=1
+    const total=ii+index
 return(
     <>
     <tr>
-<td className="ko">{ii+1}</td>
+<td className="ko">{total}</td>
 
 <td><img src={ item.url } width={"40"} alt="..."></img></td>
 {/* {console.log("http://localhost:30001/" + item.images)} */}
