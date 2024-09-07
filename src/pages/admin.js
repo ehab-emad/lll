@@ -6,6 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { getData } from "../store/createslic";
 
 export default function Admin(){
+    const ii=1
     const nav=useNavigate()
     function deleteproduct(id){
         fetch('https://server1-nz9w.onrender.com/images/'+ id,{
@@ -66,7 +67,7 @@ data.length>0 ?
 return(
     <>
     <tr>
-<td className="ko">{item.id}</td>
+<td className="ko">{ii+1}</td>
 
 <td><img src={ item.url } width={"40"} alt="..."></img></td>
 {/* {console.log("http://localhost:30001/" + item.images)} */}
