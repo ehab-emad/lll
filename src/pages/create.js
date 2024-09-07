@@ -47,7 +47,7 @@ async function handlesubmit(event){
     // }
 
  try {
-    const res=await fetch('https://server1-nz9w.onrender.com/images',{
+    const res=await fetch('https://server1-nz9w.onrender.com',{
         method:"Post",
         body:formData
     })
