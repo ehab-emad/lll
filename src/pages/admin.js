@@ -67,7 +67,7 @@ data.length>0 ?
 return(
     <>
     <tr>
-<td className="ko">{ii+1}</td>
+<td className="ko">{ii++}</td>
 
 <td><img src={ item.url } width={"40"} alt="..."></img></td>
 {/* {console.log("http://localhost:30001/" + item.images)} */}
